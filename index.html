@@ -22,9 +22,9 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-uppercase " href="#">Start bootstrap</a>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand fw-bold text-uppercase row " href="#">Start bootstrap</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -49,8 +49,8 @@
 
 
     <!-- jumbo -->
-    <div id="jumbo" class="my_color_green text-white text-center py-5">
-        <div class=" row container-fluid justify-content-center text-uppercase">
+    <div id="jumbo" class="container-fluid my_color_green text-white text-center py-5">
+        <div class="row  justify-content-center text-uppercase">
 
             <div class="col-sm-4 col-md-3 col-lg-1">
 
@@ -59,6 +59,7 @@
             </div>
 
             <h1>Start Bootstrap</h1>
+
             <div class="struttura-titolo col-3  mx-auto">
                 <div class="separator row align-items-center">
                     <div class="col-5 ">
@@ -73,7 +74,7 @@
                 </div>
             </div>
 
-            <p>
+            <p class="text-center ">
                 Graphic Artist - Web Designer - Illustrator
             </p>
         </div>
@@ -98,11 +99,11 @@
             </div>
         </div>
 
-        <div class="row test row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
             <div class="col p-2">
                 <div class="my_card ">
-                    <img class="img-fluid" src="./img/cabin.png" alt="">
+                    <img class="rounded w-100 img-fluid" src="./img/cabin.png" alt="">
                 </div>
             </div>
 
@@ -239,22 +240,27 @@
 
 
                 <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp"
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control border-0 border-bottom rounded-0 shadow-non" id="floatingName" aria-describedby="emailHelp"
                             placeholder="Name">
+                            <label for="floatingName">Name</label>
                     </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control border-0 border-bottom rounded-0 shadow-non" id="floatingEmail" aria-describedby="emailHelp"
                             placeholder="Email Address">
+                            <label for="floatingName">Email Address</label>
                     </div>
-                    <div class="mb-3">
-                        <input type="number" class="form-control" id="inputPhoneNumber" aria-describedby="emailHelp"
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control border-0 border-bottom rounded-0 shadow-non" id="floatingPhoneNumber" aria-describedby="emailHelp"
                             placeholder="Phone Number">
+                            <label for="floatingName">Phone Number</label>
                     </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" id="inputMessage" rows="5" placeholder="Message"></textarea>
+                    <div class="form-floating mb-3">
+                        <label for="floatingName">Message</label>
+                        <textarea class="form-control border-0 border-bottom rounded-0 shadow-non" id="floatingMessage" rows="5" placeholder="Message">
+                        </textarea>
                     </div>
-                    <button type="submit" class="btn my_color_green">Send</button>
+                    <button type="submit" class="btn my_color_green text-white ">Send</button>
                 </form>
             </div>
 
@@ -268,7 +274,7 @@
     <!-- footer -->
 
 
-    <footer class="text-white my_color_blue">
+    <footer class="text-white my_color_blue container-fluid ">
         <div class="row row-cols-1 row-cols-md-3 text-center py-5">
             <div class="col">
                 <div class="text-uppercase fs-5 mb-2">
@@ -306,10 +312,10 @@
                 </p>
             </div>
         </div>
-        <div class="footer-bottom py-4 text-center bg-black">
-            <span>Copyright © Classe 118 2024 </span>
-        </div>
     </footer>
+    <div class="footer-bottom py-4 text-center bg-black text-white">
+        <span>Copyright © Classe 118 2024 </span>
+    </div>
     <!-- fine footer -->
 
 
