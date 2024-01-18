@@ -1,8 +1,12 @@
 body > * {
     border: 2px solid white;
 }
-.my_height {
-    height: 100px;
+
+.test [class*="col"] .my_card {
+    padding: 100px 0;
+
+    background-color: purple;
+    border: dashed 3px black;
 }
 
 .my_color_green {
